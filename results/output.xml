@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161101 19:49:00.279" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\Users\Dávid\PycharmProjects\index\index_find.robot" id="s1" name="Index Find">
+<test id="s1-t1" name="Test title">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.index.hu</arg>
+<arg>ff</arg>
+</arguments>
+<msg timestamp="20161101 19:49:00.420" level="INFO">Opening browser 'ff' to base url 'http://www.index.hu'</msg>
+<status status="PASS" endtime="20161101 19:49:11.983" starttime="20161101 19:49:00.420"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161101 19:49:12.265" starttime="20161101 19:49:11.983"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Szerzői jog</arg>
+</arguments>
+<status status="PASS" endtime="20161101 19:49:12.337" starttime="20161101 19:49:12.266"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>xpath=//a[@id="icon-nagyito"]</arg>
+</arguments>
+<msg timestamp="20161101 19:49:12.337" level="INFO">Clicking link 'xpath=//a[@id="icon-nagyito"]'.</msg>
+<status status="PASS" endtime="20161101 19:49:12.428" starttime="20161101 19:49:12.337"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=fixedheader-dropdown-kereses</arg>
+<arg>baleset</arg>
+</arguments>
+<msg timestamp="20161101 19:49:12.428" level="INFO">Typing text 'baleset' into text field 'id=fixedheader-dropdown-kereses'</msg>
+<status status="PASS" endtime="20161101 19:49:12.514" starttime="20161101 19:49:12.428"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>baleset</arg>
+</arguments>
+<status status="PASS" endtime="20161101 19:49:12.533" starttime="20161101 19:49:12.514"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>id=fixedheader-dropdown-kereses</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20161101 19:49:13.206" starttime="20161101 19:49:12.534"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Sajnos nem találtunk</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161101 19:49:18.474" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20161101 19:49:18.474" starttime="20161101 19:49:18.351"></status>
+</kw>
+<msg timestamp="20161101 19:49:18.475" level="FAIL">Text 'Sajnos nem találtunk' did not appear in 5 seconds</msg>
+<status status="FAIL" endtime="20161101 19:49:18.475" starttime="20161101 19:49:13.207"></status>
+</kw>
+<doc>Basic info</doc>
+<tags>
+<tag>Find "baleset"</tag>
+</tags>
+<status status="FAIL" endtime="20161101 19:49:18.476" critical="yes" starttime="20161101 19:49:00.420">Text 'Sajnos nem találtunk' did not appear in 5 seconds</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" endtime="20161101 19:49:18.477" starttime="20161101 19:49:00.279"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Find "baleset"</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Index Find" pass="0">Index Find</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
